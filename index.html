@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>בראון אבטחה בע"מ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Heebo', sans-serif;
+      background-color: #0a0a0a;
+      color: #fff;
+    }
+    header {
+      background: url('security-team.jpg') center/cover no-repeat;
+      padding: 140px 20px 60px;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+    header h1 {
+      font-size: 46px;
+      color: #ffcc00;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    nav a {
+      color: #ffcc00;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 18px;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #ffcc00;
+      text-align: center;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 12px;
+      border: 2px solid #ffcc00;
+    }
+    .articles {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+    .article {
+      background-color: #1b1b1b;
+      padding: 20px;
+      border-radius: 10px;
+      border: 2px solid #ffcc00;
+    }
+    .article h3 {
+      color: #ffcc00;
+      margin-top: 0;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: 0;
+      border-radius: 12px;
+      margin-top: 20px;
+    }
+    .contact a {
+      color: #ffcc00;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+      font-size: 16px;
+    }
+    footer {
+      background: #111;
+      color: #aaa;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>בראון אבטחה בע"מ</h1>
+    <p>אבטחה מקצועית. אמינה. זמינה בכל רגע.</p>
+    <nav>
+      <a href="#gallery">תמונות</a>
+      <a href="#articles">מאמרים</a>
+      <a href="#contact">צור קשר</a>
+    </nav>
+  </header>
+
+  <section id="gallery">
+    <h2>תמונות מהשטח</h2>
+    <div class="gallery">
+      <img src="security-team.jpg" alt="צוות מאבטחים">
+      <img src="security-team.jpg" alt="מאבטחים חמושים">
+      <img src="security-team.jpg" alt="סדרנים באירועים">
+    </div>
+  </section>
+
+  <section id="articles">
+    <h2>מאמרים</h2>
+    <div class="articles">
+      <div class="article">
+        <h3>איך לבחור חברת אבטחה מקצועית?</h3>
+        <p>בבחירת חברת אבטחה חשוב לבדוק רישוי ממשטרת ישראל, ניסיון בתחום, רמת ההכשרה של המאבטחים ויכולת התאמה לצרכים שלך.</p>
+      </div>
+      <div class="article">
+        <h3>אבטחת אירועים – מה חשוב לדעת?</h3>
+        <p>כל אירוע מחייב היערכות ביטחונית: סריקות מקדימות, סדרנים מיומנים, תגובה מהירה ותכנון קפדני. תיאום עם משטרה ורישוי נדרש לפי חוק.</p>
+      </div>
+      <div class="article">
+        <h3>סדרנות – הרבה יותר מנוכחות</h3>
+        <p>סדרן מקצועי אחראי לא רק על שמירה על הסדר, אלא גם על מענה ראשוני לאירועים חריגים, תקשורת עם הקהל, וסיוע לאנשי ביטחון אחרים.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>צור קשר</h2>
+    <div class="contact">
+      <a href="tel:0505830496">📞 050-5830496</a>
+      <a href="mailto:Braonsc@gmail.com">✉️ Braonsc@gmail.com</a>
+      <a href="https://wa.me/972505830496">💬 שלח הודעה בוואטסאפ</a>
+      <p>שדרות ההסתדרות 25, חיפה (מול סיטי מול)</p>
+    </div>
+    <iframe
+      src="https://www.google.com/maps?q=שדרות+ההסתדרות+25,+חיפה&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+    ></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 בראון אבטחה בע"מ - כל הזכויות שמורות
+  </footer>
+</body>
+</html>
