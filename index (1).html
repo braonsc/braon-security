@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>בראון אבטחה בע"מ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Heebo', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    header {
+      background-color: #111;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header img {
+      max-width: 220px;
+      animation: zoomIn 1.2s ease-in-out;
+    }
+    nav {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #ffcc00;
+      bottom: -4px;
+      right: 0;
+      transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1, h2 {
+      color: #ffcc00;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .service {
+      background-color: #1a1a1a;
+      padding: 25px;
+      border-radius: 12px;
+      border: 2px solid #ffcc00;
+      transition: transform 0.3s ease;
+    }
+    .service:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
+    .contact a {
+      color: #ffcc00;
+      text-decoration: none;
+      display: block;
+      margin: 6px 0;
+      font-size: 16px;
+    }
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes zoomIn {
+      0% {transform: scale(0.8); opacity: 0;}
+      100% {transform: scale(1); opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="לוגו בראון אבטחה" />
+    <nav>
+      <a href="#home">דף הבית</a>
+      <a href="#services">שירותים</a>
+      <a href="#about">אודות</a>
+      <a href="#contact">צור קשר</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h1>בראון אבטחה בע"מ</h1>
+    <p>אבטחה מקצועית. אמינה. זמינה בכל רגע.</p>
+  </section>
+
+  <section id="services">
+    <h2>השירותים שלנו</h2>
+    <div class="services">
+      <div class="service">אבטחה חמושה</div>
+      <div class="service">סדרנות באירועים</div>
+      <div class="service">שירותי חובשים</div>
+      <div class="service">אבטחת טיולים ומוסדות</div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>אודות החברה</h2>
+    <p>
+      בראון אבטחה בע"מ היא חברה המתמחה במתן פתרונות אבטחה מותאמים אישית ללקוחות פרטיים, עסקיים ומוסדיים.<br/>
+      החברה מספקת שירותים מגוונים הכוללים אבטחה חמושה, סדרנות מקצועית, ליווי חובשים, אבטחת טיולים ומוסדות חינוך.<br/><br/>
+      הצוות שלנו מורכב ממאבטחים מוסמכים, יוצאי יחידות קרביות, בעלי ניסיון מבצעי עשיר.<br/>
+      כלל המאבטחים עוברים הכשרות תקופתיות ומחזיקים ברישיונות בתוקף, בהתאם לדרישות משטרת ישראל והמשרד לביטחון לאומי.<br/><br/>
+      אנו פועלים בפריסה ארצית, עם דגש על אזור הצפון, ומתחייבים לספק שירות מקצועי, אמין ודיסקרטי, תוך התאמה מלאה לצרכי הלקוח.<br/><br/>
+      <strong>בראון אבטחה – הביטחון שלך, השליחות שלנו.</strong>
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>צור קשר</h2>
+    <div class="contact">
+      <a href="tel:0505830496">📞 050-5830496</a>
+      <a href="mailto:Braonsc@gmail.com">✉️ Braonsc@gmail.com</a>
+      <a href="https://wa.me/972505830496">💬 שלח הודעה בוואטסאפ</a>
+      <p>שדרות ההסתדרות 25, חיפה</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 בראון אבטחה בע"מ - כל הזכויות שמורות
+  </footer>
+</body>
+</html>
